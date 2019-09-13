@@ -1,0 +1,50 @@
+{
+  "author": "Andrii Plygun <andrii.plygun.89@gmail.com>",
+  "dependencies": {
+    "@date/holidays-us": "^0.4.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/koa": "^2.0.49",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-websocket": "^5.0.4",
+    "@types/luxon": "^1.15.2",
+    "cross-env": "^5.2.1",
+    "dotenv": "^8.1.0",
+    "highland": "^2.13.5",
+    "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^5.1.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0",
+    "koa-websocket": "^6.0.0",
+    "koa2-cors": "^2.0.6",
+    "koa2-validation": "^1.0.0",
+    "luxon": "^1.17.2"
+  },
+  "description": "Implementation of a settlement transfer date estimation",
+  "devDependencies": {
+    "@types/chai": "^4.2.1",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.19.0",
+    "typescript": "<3.6.0"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "settlement-transfer-date",
+  "repository": "git+https://github.com/plygun/settlement-transfer-date.git",
+  "scripts": {
+    "build": "tslint --project . && tsc",
+    "lint": "tslint --project .",
+    "lint-fix": "tslint --project . --fix",
+    "start": "cross-env NODE_ENV=development nodemon -e ts -w 'src/**/*' -x ts-node ./src/server.ts",
+    "test": "mocha -r ts-node/register test/*.ts"
+  },
+  "version": "1.0.0"
+}
