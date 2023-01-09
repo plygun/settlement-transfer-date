@@ -22,7 +22,7 @@
     "koa-websocket": "^6.0.0",
     "koa2-cors": "^2.0.6",
     "koa2-validation": "^1.0.0",
-    "luxon": "^1.17.2",
+    "luxon": "^1.28.1",
     "minimist": "^1.2.3"
   },
   "description": "Implementation of a settlement transfer date estimation",
